@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – Tennis Coach App</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1f2937;
+      --bg: #ffffff;
+      --muted: #6b7280;
+      --link: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg:#e5e7eb; --bg:#0b0f14; --muted:#9ca3af; --link:#60a5fa; }
+    }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+    body { font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .container { max-width: 900px; padding: 2rem 1.25rem 4rem; margin: 0 auto; }
+    h1 { font-size: 2rem; margin: 0 0 0.5rem; }
+    h2 { font-size: 1.25rem; margin: 1.75rem 0 0.25rem; }
+    p, li { margin: 0.5rem 0; }
+    .muted { color: var(--muted); }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 1.25rem; }
+    footer { margin-top: 2rem; font-size: 0.95rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="muted">For Tennis Coach App — Last updated: <strong>2025-11-02</strong></p>
+    </header>
+
+    <section>
+      <h2>1) Controller</h2>
+      <p><strong>Ziga Kovacic</strong>, <strong>Slovenia</strong>. Contact: <a href="mailto:ziga.kovacic777@gmail.com">ziga.kovacic777@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>2) What We Collect</h2>
+      <ul>
+        <li><strong>Account data</strong>: name, email (if users register).</li>
+        <li><strong>Training attendance</strong>: presence/absence per session.</li>
+        <li><strong>Billing</strong>: prices, amounts, invoice status (no card details stored by the app).</li>
+        <li><strong>Technical data</strong>: device model, app version, diagnostic logs (for improvements).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3) How We Use Data</h2>
+      <ul>
+        <li>Manage schedules and confirm session attendance.</li>
+        <li>Calculate monthly costs per player and send invoices/notifications via email.</li>
+        <li>Provide user support and improve the app.</li>
+        <li>Comply with legal obligations (e.g., accounting).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4) Legal Bases (GDPR)</h2>
+      <ul>
+        <li><strong>Contract performance</strong> (providing the app’s core features).</li>
+        <li><strong>Legitimate interests</strong> (abuse prevention, app improvements).</li>
+        <li><strong>Consent</strong> (e.g., optional notifications/marketing, where applicable).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5) Sharing</h2>
+      <p>We share data with service providers only as necessary to operate the app. We do not sell personal data.</p>
+      <ul>
+        <li><strong>Backend database and auth</strong>: Supabase (hosting, authentication, database, storage, email OTPs). Data may be processed in Supabase’s infrastructure regions you choose.</li>
+        <li><strong>Email/communications</strong>: Your configured email service for sending invoices and notifications (e.g., Supabase SMTP or another provider).</li>
+        <li><strong>Analytics/crash reporting</strong>: If enabled, we may use services such as Firebase Crashlytics or similar to diagnose issues.</li>
+        <li><strong>Payments</strong>: If payments are accepted in the future, this will be via a third‑party processor (e.g., Stripe). Card data is not stored in the app.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6) Data Retention</h2>
+      <ul>
+        <li>We retain data while a user maintains an account or as required by law.</li>
+        <li>Logs and analytics: up to <strong>12</strong> months (unless a shorter period is configured).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7) Security</h2>
+      <ul>
+        <li>Encryption in transit (HTTPS/TLS).</li>
+        <li>Access controls and standard security practices. Supabase provides security features such as Row Level Security (RLS) which we configure for least‑privilege access.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8) Your Rights (GDPR)</h2>
+      <p>You may request access, correction, deletion, portability, restriction, or object to processing. Send requests to <a href="mailto:ziga.kovacic777@gmail.com">ziga.kovacic777@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>9) Children</h2>
+      <p>The app is not intended for children under 13. We do not knowingly collect data about children.</p>
+    </section>
+
+    <section>
+      <h2>10) International Transfers</h2>
+      <p>Your data may be processed outside the EU by our processors with appropriate safeguards (e.g., Standard Contractual Clauses). Supabase and any other vendors we use will provide such safeguards where required.</p>
+    </section>
+
+    <section>
+      <h2>11) Contact</h2>
+      <p>Questions? Contact <strong>Ziga Kovacic</strong> at <a href="mailto:ziga.kovacic777@gmail.com">ziga.kovacic777@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>12) Changes</h2>
+      <p>We may update this policy. The latest version will always be available at this URL.</p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Tennis Coach App</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
