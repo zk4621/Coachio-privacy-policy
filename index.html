@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy – Tennis Coach App</title>
+  <title>Privacy Policy – Coachio</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -32,7 +32,7 @@
   <main class="container">
     <header>
       <h1>Privacy Policy</h1>
-      <p class="muted">For Coachio — Last updated: <strong>2025-11-02</strong></p>
+      <p class="muted">For Coachio — Last updated: <strong>2026-08-13</strong></p>
     </header>
 
     <section>
@@ -43,10 +43,21 @@
     <section>
       <h2>2) What We Collect</h2>
       <ul>
-        <li><strong>Account data</strong>: name, email (if users register).</li>
-        <li><strong>Training attendance</strong>: presence/absence per session.</li>
-        <li><strong>Billing</strong>: prices, amounts, invoice status (no card details stored by the app).</li>
-        <li><strong>Technical data</strong>: device model, app version, diagnostic logs (for improvements).</li>
+        <li><strong>Account data</strong>: name, email address, and sign-in credentials.</li>
+        <li><strong>People you coach</strong>: the names, email addresses, phone
+          numbers, skill levels and notes you enter about your players. You
+          enter this about other people, so see &ldquo;Data about your
+          players&rdquo; below.</li>
+        <li><strong>Sessions</strong>: dates, times, courts, attendance and your
+          session notes.</li>
+        <li><strong>Billing</strong>: rates, amounts, invoice status and hour
+          packages. No card details are stored by the app.</li>
+        <li><strong>Voice recordings</strong>: if you use voice to create or edit
+          a session, the audio is sent to a speech-to-text provider to be
+          transcribed. Coachio does not store the recording — only the resulting
+          session.</li>
+        <li><strong>Technical data</strong>: device model, app version,
+          diagnostic and crash logs, and anonymous usage events.</li>
       </ul>
     </section>
 
@@ -73,10 +84,23 @@
       <h2>5) Sharing</h2>
       <p>We share data with service providers only as necessary to operate the app. We do not sell personal data.</p>
       <ul>
-        <li><strong>Backend database and auth</strong>: Supabase (hosting, authentication, database, storage, email OTPs). Data may be processed in Supabase’s infrastructure regions you choose.</li>
-        <li><strong>Email/communications</strong>: Your configured email service for sending invoices and notifications (e.g., Supabase SMTP or another provider).</li>
-        <li><strong>Analytics/crash reporting</strong>: If enabled, we may use services such as Firebase Crashlytics or similar to diagnose issues.</li>
-        <li><strong>Payments</strong>: If payments are accepted in the future, this will be via a third‑party processor (e.g., Stripe). Card data is not stored in the app.</li>
+        <li><strong>Backend database and auth</strong>: Supabase (hosting, authentication, database, storage). This is where your account and coaching data live.</li>
+        <li><strong>Speech-to-text</strong>: OpenAI and, where selected, Soniox.
+          When you dictate a session, the audio and the names of your players and
+          courts are sent to be transcribed and turned into a draft session.
+          These providers process data outside the EU.</li>
+        <li><strong>Google Calendar</strong>: only if you connect it. Sessions
+          you create are then written to your own Google Calendar, under your
+          Google account.</li>
+        <li><strong>Apple Calendar</strong>: only if you enable it on iOS. Events
+          are written on the device itself and are not sent to us.</li>
+        <li><strong>Crash reporting and product analytics</strong>: Sentry (crash
+          diagnostics) and PostHog (anonymous usage events, EU-hosted).</li>
+        <li><strong>Payments</strong>: Stripe, where you choose to collect a
+          player&rsquo;s payment through it. Card data is handled by Stripe and is
+          never stored in the app.</li>
+        <li><strong>Email/communications</strong>: the email service configured
+          for sending invoices and notifications.</li>
       </ul>
     </section>
 
@@ -94,6 +118,42 @@
         <li>Encryption in transit (HTTPS/TLS).</li>
         <li>Access controls and standard security practices. Supabase provides security features such as Row Level Security (RLS) which we configure for least‑privilege access.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>7b) Data about your players</h2>
+      <p>
+        Most of what you keep in Coachio is about other people — the players you
+        coach. They are not Coachio users and have not agreed to anything with
+        us, so the responsibility for that data is yours: under GDPR you are the
+        controller for it and we process it on your behalf.
+      </p>
+      <p>In practice that means:</p>
+      <ul>
+        <li>Enter only what you actually need to run your coaching.</li>
+        <li>Tell your players that you keep their details in an app, and be ready
+          to show or correct what you hold if they ask.</li>
+        <li>Deleting a player, or your whole account, removes their details from
+          our systems too.</li>
+      </ul>
+      <p>
+        We do not contact your players, market to them, or use their details for
+        anything beyond running the app for you.
+      </p>
+    </section>
+
+    <section>
+      <h2>7c) Deleting your account</h2>
+      <p>
+        You can delete your account and its data at any time from
+        <strong>Profile → Settings → Delete account</strong> in the app, which
+        takes effect immediately, or by emailing us.
+      </p>
+      <p>
+        Full instructions, and exactly what is deleted and what is briefly
+        retained, are on the
+        <a href="./delete-account/">account deletion page</a>.
+      </p>
     </section>
 
     <section>
@@ -122,7 +182,7 @@
     </section>
 
     <footer>
-      <p>© <span id="year"></span> Tennis Coach App</p>
+      <p>© <span id="year"></span> Coachio</p>
     </footer>
   </main>
 
